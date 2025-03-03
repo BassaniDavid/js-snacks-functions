@@ -7,22 +7,22 @@ const userName = 'Mario';
 function hello (name) {
     
     // controllo se la stringa inserita non ha numeri o spazi
-    for(let i = 0; i < name.length; i++){
+    for (let i = 0; i < name.length; i++) {
         
         if(!isNaN(name[i]) || name[i] === " " ){
-            return false
-        }
-        else {
-            return true
+            console.log(false) 
+            return 'Inserisci un nome valido'
         }
     }
-        
+
+    console.log(true) 
+    return `Ciao ${name}`
 
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-hello(userName)
-console.log(hello(userName))
+
 let result=hello(userName)
+console.log(result)
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
