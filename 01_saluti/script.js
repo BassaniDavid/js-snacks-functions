@@ -26,3 +26,21 @@ let result=hello(userName)
 console.log(result)
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+
+// versione con arrow function
+let hello2 = (name) =>{
+    
+    // controllo se la stringa inserita non ha numeri o spazi
+    for (let i = 0; i < name.length; i++) {
+        
+        if(!isNaN(name[i]) || name[i] === " " ){
+            console.log(false) 
+            return 'Inserisci un nome valido'
+        }
+    }
+    return `Ciao ${name}`
+
+}
+
+console.log(hello2(userName))
