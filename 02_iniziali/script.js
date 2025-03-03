@@ -8,10 +8,15 @@ function funzione (input) {
 
     // controllo array che non ci siano numeri
     for (let i = 0; i < input.length; i++) {
-        if(isNaN(input[i]) === false) {
-            return 'array non valido'
-        } 
+        let stringa =input[i].toString()
+        for (let i = 0; i < stringa.length; i++) {
+        
+            if(!isNaN(stringa[i]) || stringa[i] === " " ){
+                return 'array non valido'
+            }
+        }
     }
+
     // nuovo array in cui inserire le iniziali
     let inArray = []
 
