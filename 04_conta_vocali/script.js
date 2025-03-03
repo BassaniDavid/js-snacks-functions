@@ -12,8 +12,19 @@ function funzione (input) {
     if (typeof word !== typeof string) {
         return 'non è una stringa'
     }
+    // variabile contatore
+    let contatorevocali = 0
 
     // controllo ogni lettera e se è uguale ad una vocale aumento di 1 una variabile
+    input = input.toLowerCase()
+
+    for(let i = 0; i < input.length; i++){
+        if(input[i] === 'a' || input[i] === 'e' || input[i] === 'i' || input[i] === 'o' || input[i] === 'u') {
+            contatorevocali++
+        }
+    }
+    
+    return contatorevocali
 }
 
 
