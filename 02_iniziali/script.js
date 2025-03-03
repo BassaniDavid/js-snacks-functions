@@ -6,7 +6,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui.
 function funzione (input) {
 
-    // controllo array che non ci siano numeri
+    // controllo array che non ci siano numeri e spazi
     for (let i = 0; i < input.length; i++) {
         let stringa =input[i].toString()
         for (let i = 0; i < stringa.length; i++) {
