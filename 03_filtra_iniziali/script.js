@@ -10,7 +10,7 @@ function funzione (input, letter) {
     
     // controllo array che non ci siano numeri e spazi
     for (let i = 0; i < input.length; i++) {
-        let stringa =input[i].toString()
+        let stringa =input[i]
         for (let i = 0; i < stringa.length; i++) {
         
             if(!isNaN(stringa[i]) || stringa[i] === " " ){
@@ -23,7 +23,7 @@ function funzione (input, letter) {
 
     // controllo ogni elemento singolarmente, lo trasformo in stringa e se in prima posizione ha la lettera corretta la aggiungo al secondo array
     for (let i = 0; i < input.length; i++) {
-        let stringa =input[i].toString()
+        let stringa =input[i]
 
         if(stringa[0] === letter){
             secondArray.push(stringa)

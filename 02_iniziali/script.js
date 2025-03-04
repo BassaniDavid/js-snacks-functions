@@ -8,7 +8,7 @@ function funzione (input) {
 
     // controllo array che non ci siano numeri e spazi
     for (let i = 0; i < input.length; i++) {
-        let stringa =input[i].toString()
+        let stringa =input[i]
         for (let i = 0; i < stringa.length; i++) {
         
             if(!isNaN(stringa[i]) || stringa[i] === " " ){
@@ -24,7 +24,7 @@ function funzione (input) {
     for (let i = 0; i < input.length; i++) {
     
         // trasforma l'elemento selezionato dell' array in una stringa
-        let stringa =input[i].toString()
+        let stringa =input[i]
     
         // inserisci la prima lettera della stringa nel secondo array
         inArray.push(stringa[0])
